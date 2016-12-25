@@ -1,5 +1,3 @@
-
-
 N,M = raw_input().split(" ")
 
 
