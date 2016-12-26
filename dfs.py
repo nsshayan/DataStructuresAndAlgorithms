@@ -18,11 +18,13 @@ for i in range(int(M)):
 x = int(raw_input())
 
 visited = [0 for y in range(int(N))]
+#Recursive implementation of dfs
 def dfs(g,headNode):
     visited[headNode]=1
     for w in g[headNode]:
         if visited[w]==0:
             dfs(g,w)
+
 
 dfs(g,x-1)    
 #print visited
